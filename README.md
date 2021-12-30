@@ -9,6 +9,10 @@ proxy contract, my immediate thought is to have a function and a flag that indic
 has been turned on or off. If off, then the transaction calling for an upgrade should fail. Since the
 upgradeability logic lies in the proxy contract, I may need to dig in to OZ's implementation.
 
+Most of the relevant code for this challenge was done in `contracts/`. The `migrations/` folder contains
+nothing special, besides using the OZ functions from their upgradeable plugin. Finally, the `tests/` directory
+contains some pretty in-depth testing of the contracts I did before deploying to Kovan.
+
 ## Transaction deploys smart contracts:
 https://kovan.etherscan.io/tx/0x225eb3b42738494f2f074ae27296c36d3adcab73944de1c01a71a92d3d924665
 https://kovan.etherscan.io/tx/0xf90abec50e8126966cfabf0b126dd903c877822318a97210ce57969064f08a48 (deploy proxy)
