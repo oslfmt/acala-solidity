@@ -1,0 +1,23 @@
+{
+  "name": "acala",
+  "version": "1.0.0",
+  "description": "Please implement an upgradeable ERC20 smart contract using Solidity and deploy them on Kovan testnet.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/contracts-upgradeable": "^4.4.1"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.11.0",
+    "@truffle/hdwallet-provider": "^2.0.0"
+  }
+}
